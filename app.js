@@ -47,14 +47,11 @@ async function getMovies() {
            The query returns metadata regarding the query as well as the data itself
            As we just want to work with the data, we are pulling the movies data into its own variable (movies)
            This variable is an array of movie objects */
-       console.log(resp);
        var movies = resp.data; 
        for (var i = 0; i < movies.length; i++) {
         addToList(movies[i]);
     }
-
     } 
-
     catch(err) {
       console.error(err);
     }
@@ -68,7 +65,6 @@ async function getMovies() {
 */
 function addToList(movie) {
     // Initialise the htmlStr variable
-    console.log(movie);
     var htmlStr = "";
 
     // If there is a title field in this movie, add it to htmlStr with special formatting
