@@ -1,6 +1,6 @@
 
 // Define the Realm client (***** YOU MUST UPDATE YOUR app_id ***** )
-const app_id = 'workshop-201-realm-wcqaj';
+const app_id = '<YOUR-APP-ID>';
 const app = new Realm.App({ id: app_id});
 
 /* 
